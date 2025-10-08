@@ -13,16 +13,16 @@ import {
   Code,
   TrendingUp,
 } from "lucide-react"
-const WhatsAppIcon = (props) => (
+const WhatsAppIcon = ({ size = 24, ...props }) => (
   <svg
     viewBox="0 0 24 24"
     fill="currentColor"
-    width="24"
-    height="24"
+    width={size}
+    height={size}
     aria-hidden="true"
     {...props}
   >
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.199-.347.224-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.654-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.373-.025-.522-.075-.149-.669-1.61-.916-2.206-.24-.579-.485-.5-.67-.51l-.573-.01c-.198 0-.52.074-.793.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.097 3.2 5.085 4.487.711.306 1.266.489 1.699.626.713.227 1.36.195 1.871.118.571-.085 1.758-.719 2.007-1.413.248-.695.248-1.29.173-1.413-.074-.124-.272-.198-.57-.347zM12.002 2C6.479 2 2 6.478 2 11.999c0 2.118.692 4.084 1.865 5.682L2 22l4.435-1.835A9.977 9.977 0 0 0 12.002 22C17.523 22 22 17.522 22 11.999 22 6.478 17.523 2 12.002 2z" />
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.199-.347.224-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.654-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.373-.025-.522-.075-.149-.669-1.61-.916-2.206-.24-.579-.485-.5-.67-.51-.173-.01-.371-.01-.57-.01-.198 0-.52.074-.793.372-.273.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
   </svg>
 );
 
@@ -482,7 +482,7 @@ whileHover={{ scale: 1.05 }}
 whileTap={{ scale: 0.97 }}
 className="inline-flex items-center gap-3 rounded-full bg-white text-purple-700 px-10 py-5 text-lg font-bold shadow-2xl hover:bg-purple-50 transition-all"
 >
-Escribirme por WhatsApp <MessageCircle size={24} />
+Escribirme por WhatsApp <WhatsAppIcon size={24} />
 </motion.a>
 
 
@@ -511,7 +511,7 @@ const WhatsAppButton = () => (
     className="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 rounded-full bg-green-500 p-4 text-white shadow-2xl transition-colors hover:bg-green-600"
     aria-label="Abrir WhatsApp"
   >
-    <MessageCircle size={26} />
+    <WhatsAppIcon size={26} />
     <span className="hidden pr-2 font-semibold sm:inline">Hablemos</span>
   </motion.a>
 )
@@ -520,7 +520,7 @@ const Footer = () => (
   <footer className="bg-slate-900 py-12 text-white" aria-labelledby="footer-title">
     <div className="mx-auto max-w-6xl px-6 text-center">
       <h3 id="footer-title" className="mb-2 text-3xl font-bold">
-        ⚡ PRESENCE
+        <Zap size={28} strokeWidth={2.5} className="inline-block text-purple-400 drop-shadow-[0_0_6px_rgba(168,85,247,0.8)]" /> PRESENCE
       </h3>
       <p className="mb-6 text-slate-400">Presencia digital que vende, no que decora</p>
       <div className="mb-8 flex justify-center gap-6">
@@ -528,19 +528,19 @@ const Footer = () => (
           href={SOCIALS.whatsapp}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-slate-400 transition-colors hover:text-white"
+          className="rounded-full bg-slate-800 p-3 text-white transition-all hover:bg-green-500 hover:scale-110"
           aria-label="WhatsApp"
         >
-          <WhatsAppIcon size={24} />
+          <WhatsAppIcon size={28} />
         </a>
         <a
           href={SOCIALS.instagram}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-slate-400 transition-colors hover:text-white"
+          className="rounded-full bg-slate-800 p-3 text-white transition-all hover:bg-pink-500 hover:scale-110"
           aria-label="Instagram"
         >
-          <Instagram size={24} />
+          <Instagram size={28} />
         </a>
       </div>
       <p className="text-sm text-slate-500">© {new Date().getFullYear()} PRESENCE. Hecho con ❤️ en Argentina.</p>
