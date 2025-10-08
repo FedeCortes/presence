@@ -114,7 +114,7 @@ const Hero = () => {
             , no que decora
           </h1>
           <p className="mx-auto mb-10 max-w-2xl text-lg md:text-2xl text-slate-300">
-            Convertí tu Instagram en una máquina de ventas con landings, automatizaciones y marca personal en <strong>7 días</strong>.
+            Convertí tu Instagram en una máquina de ventas con landings, estrategias, automatizaciones y marca personal en <strong>7 días</strong>.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -251,7 +251,7 @@ const Process = () => {
   const steps = [
     { number: "1", title: "Auditoría", badge: "Gratis", description: "Revisamos tu presencia y detectamos oportunidades", time: "30 min" },
     { number: "2", title: "Estrategia", badge: "48hs", description: "Definimos qué necesitás y cómo lo vamos a ejecutar", time: "2 días" },
-    { number: "3", title: "Desarrollo", badge: "5 días", description: "Landing, link-in-bio y automatizaciones", time: "5 días" },
+    { number: "3", title: "Desarrollo", badge: "5 días", description: "Landing, link-in-bio, estrategias y automatizaciones", time: "5 días" },
     { number: "4", title: "Lanzamiento", badge: "24/7", description: "Tu negocio online funcionando sin parar", time: "∞" },
   ]
   return (
