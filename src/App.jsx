@@ -300,10 +300,11 @@ const Portfolio = () => {
       url: "https://cherrydiosatantrica.netlify.app",
       accent: "from-pink-500 to-purple-600",
       bullets: [
-        "Video preview + formulario automatizado",
-        "Link-in-bio integrado",
-        "Botón de WhatsApp flotante",
-        "Optimización de perfiles",
+        "Menu de beacons",
+        "Pagina web con varias secciones",
+        "Redes sociales integradas a la web",
+        "Video preview con formulario y llamado a la accion",
+        "Optimización de redes y estrategias de conversion.",
       ],
     },
     {
@@ -312,10 +313,10 @@ const Portfolio = () => {
       url: "https://working-group.com.ar",
       accent: "from-indigo-500 to-cyan-600",
       bullets: [
-        "Arquitectura clara y limpia",
-        "Secciones de servicios y contacto",
-        "Performance optimizada",
-        "Imagen corporativa profesional",
+        "Pagina web con varias secciones",
+        "Redes sociales integradas a la web",
+        "Asesoria para cargar el negocio a google maps",
+        "Asesoria para crear la identidad de la empresa"
       ],
     },
   ]
