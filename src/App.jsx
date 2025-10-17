@@ -295,7 +295,7 @@ const Process = () => {
     title: "Implementación", 
     badge: "En acción", 
     description: "Diseño, ajustes o lanzamientos. Trabajo rápido, te aconsejo, te muestro avances y optimizo mientras construimos resultados reales.", 
-    time: "5 días" 
+    time: "∞" 
   },
   { 
     number: "4", 
