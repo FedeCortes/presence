@@ -373,7 +373,7 @@ const Portfolio = () => {
     },
     {
       name: "Judith Navarro",
-      role: "Estrategia y optimización integral",
+      role: "Estrategia y optimización completa",
       url: "https://www.judithnavarro.com/",
       accent: "from-rose-500 to-orange-500",
       bullets: [
