@@ -106,16 +106,19 @@ const Hero = () => {
           <Zap size={14} strokeWidth={2.5} className="text-purple-400 drop-shadow-[0_0_5px_rgba(168,85,247,0.8)]" />
           PRESENCE
         </span>
-          <h1 id="hero-title" className="mb-6 text-5xl md:text-7xl font-extrabold leading-tight tracking-tight">
+         <h1 id="hero-title" className="mb-6 text-5xl md:text-7xl font-extrabold leading-tight tracking-tight">
             Presencia digital que
             <span className="mx-2 inline-block bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
               vende
             </span>
             , no que decora
           </h1>
+
           <p className="mx-auto mb-10 max-w-2xl text-lg md:text-2xl text-slate-300">
-            Convertí tu Instagram en una máquina de ventas con landings, estrategias, automatizaciones y marca personal en <strong>7 días</strong>.
+            Te ayudo a construir una presencia digital coherente, profesional y con propósito.{" "}
+            <strong className="text-white">Tu marca va a vender incluso cuando vos no estás.</strong>
           </p>
+
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <motion.a
@@ -181,28 +184,44 @@ const Services = () => {
   const services = [
     {
       icon: <Target className="h-12 w-12" />,
-      title: "Landing Page que vende",
+      title: "Página que convierte",
       description:
-        "Diseño profesional y responsive con formularios directos a WhatsApp, secciones de servicios con video y hosting incluido.",
-      features: ["Diseño moderno", "Formularios inteligentes", "Hosting Netlify", "100% responsive"],
+        "Diseño páginas pensadas para mostrarte con claridad y convertir, con una estructura clara, moderna y conectada directo a WhatsApp.",
+      features: [
+        "Diseño limpio y adaptable",
+        "Formularios que generan contacto real",
+        "Hosting incluido",
+        "Listas para usar en pocos días",
+      ],
       color: "from-purple-500 to-purple-600",
     },
     {
       icon: <Zap className="h-12 w-12" />,
-      title: "Presencia optimizada",
+      title: "Comunicación que conecta",
       description:
-        "Link-in-bio (tipo Linktree) con identidad propia, optimización de bio y perfiles, y línea editorial base.",
-      features: ["Link-in-bio custom", "Optimización de bio", "Identidad visual", "Estrategia digital"],
+        "Mejoro la forma en que tu marca se muestra online: perfiles, imagen y contenido, para que todo comunique con naturalidad y conecte de verdad.",
+      features: [
+        "Optimización de bio y perfiles",
+        "Identidad visual coherente",
+        "Asesoría en contenido y tono de comunicación",
+        "Tu marca online, ordenada y coherente",
+      ],
       color: "from-pink-500 to-pink-600",
     },
     {
       icon: <Rocket className="h-12 w-12" />,
-      title: "Automatización simple",
+      title: "Estrategia que vende sola",
       description:
-        "Forms inteligentes, integración WhatsApp/Email y flujos para pasar de consulta a venta en menos pasos.",
-      features: ["Forms automatizados", "Integración WhatsApp", "Email básico", "Flujos de venta"],
+        "Te ayudo a ordenar tu sistema digital con flujos y embudos simples que guían al cliente desde el primer contacto hasta la venta.",
+      features: [
+        "Automatizaciones",
+        "Integración con WhatsApp y Email",
+        "Embudo de venta adaptado a tu negocio",
+        "Acompañamiento si lo necesitás",
+      ],
       color: "from-blue-500 to-blue-600",
-    },
+    }
+
   ]
 
   return (
@@ -212,7 +231,9 @@ const Services = () => {
           <h2 id="services-title" className="mb-4 text-4xl md:text-5xl font-bold text-slate-900">
             3 pilares para tu presencia digital
           </h2>
-          <p className="mx-auto max-w-2xl text-xl text-slate-600">Todo lo necesario para que tu negocio funcione online 24/7</p>
+          <p className="mx-auto max-w-2xl text-xl text-slate-600">
+            Lo esencial para que tu negocio se vea bien, funcione bien y empiece a vender online.
+          </p>
         </motion.div>
 
         <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-3">
@@ -226,7 +247,12 @@ const Services = () => {
               whileHover={{ y: -8 }}
               className="rounded-2xl border border-slate-200 bg-gradient-to-br from-slate-50 to-white p-8 shadow-xl hover:shadow-2xl"
             >
-              <div className={cx("mb-6 flex h-16 w-16 items-center justify-center rounded-xl text-white shadow-lg", `bg-gradient-to-br ${s.color}`)}>
+              <div
+                className={cx(
+                  "mb-6 flex h-16 w-16 items-center justify-center rounded-xl text-white shadow-lg",
+                  `bg-gradient-to-br ${s.color}`
+                )}
+              >
                 {s.icon}
               </div>
               <h3 className="mb-3 text-2xl font-bold text-slate-900">{s.title}</h3>
@@ -247,13 +273,39 @@ const Services = () => {
   )
 }
 
+
 const Process = () => {
   const steps = [
-    { number: "1", title: "Auditoría", badge: "Gratis", description: "Revisamos tu presencia y detectamos oportunidades", time: "30 min" },
-    { number: "2", title: "Estrategia", badge: "48hs", description: "Definimos qué necesitás y cómo lo vamos a ejecutar", time: "2 días" },
-    { number: "3", title: "Desarrollo", badge: "5 días", description: "Landing, link-in-bio, estrategias y automatizaciones", time: "5 días" },
-    { number: "4", title: "Lanzamiento", badge: "24/7", description: "Tu negocio online funcionando sin parar", time: "∞" },
-  ]
+  { 
+    number: "1", 
+    title: "Diagnóstico rápido", 
+    badge: "Gratis", 
+    description: "Charla inicial para entender tu negocio, tus objetivos y detectar qué es lo más urgente para mejorar resultados.", 
+    time: "30 min" 
+  },
+  { 
+    number: "2", 
+    title: "Plan a medida", 
+    badge: "Flexible", 
+    description: "Según el punto en que estés, armamos una estrategia: puede ser una web, publicidad o tu presencia completa.", 
+    time: "2 días" 
+  },
+  { 
+    number: "3", 
+    title: "Implementación", 
+    badge: "En acción", 
+    description: "Diseño, ajustes o lanzamientos. Trabajo rápido, te aconsejo, te muestro avances y optimizo mientras construimos resultados reales.", 
+    time: "5 días" 
+  },
+  { 
+    number: "4", 
+    title: "Crecimiento", 
+    badge: "Continuo", 
+    description: "Una vez que tu base está lista, podemos escalar: campañas, embudos o contenido estratégico para seguir vendiendo más y mejor.", 
+    time: "∞" 
+  },
+]
+
   return (
     <section id="proceso" className="bg-gradient-to-br from-slate-900 to-purple-900 py-20 text-white" aria-labelledby="process-title">
       <div className="mx-auto max-w-6xl px-6">
@@ -296,7 +348,7 @@ const Portfolio = () => {
   const projects = [
     {
       name: "Cherry Diosa Tántrica",
-      role: "Landing page profesional",
+      role: "Web híbrida de marca personal",
       url: "https://cherrydiosatantrica.netlify.app",
       accent: "from-pink-500 to-purple-600",
       bullets: [
@@ -319,61 +371,83 @@ const Portfolio = () => {
         "Asesoria para crear la identidad de la empresa"
       ],
     },
+    {
+      name: "Judith Navarro",
+      role: "Estrategia y optimización integral",
+      url: "https://www.judithnavarro.com/",
+      accent: "from-rose-500 to-orange-500",
+      bullets: [
+        "Análisis de posicionamiento y estrategia digital",
+        "Optimización de web, comunicación y contenidos",
+        "Conexión entre Instagram y web para captar clientes",
+        "Seguimiento y mejora continua de resultados"
+      ],
+    },
+
   ]
 
-  return (
-    <section id="portfolio" className="bg-slate-50 py-20" aria-labelledby="portfolio-title">
-      <div className="mx-auto max-w-6xl px-6">
-        <motion.div {...fadeUp} className="mb-16 text-center">
-          <h2 id="portfolio-title" className="mb-4 text-4xl md:text-5xl font-bold text-slate-900">Casos de éxito</h2>
-          <p className="text-xl text-slate-600">Resultados reales de emprendedores reales</p>
-        </motion.div>
+return (
+  <section id="portfolio" className="bg-slate-50 py-20" aria-labelledby="portfolio-title">
+    <div className="mx-auto max-w-6xl px-6">
+      <motion.div {...fadeUp} className="mb-16 text-center">
+        <h2 id="portfolio-title" className="mb-4 text-4xl md:text-5xl font-bold text-slate-900">
+          Casos de éxito
+        </h2>
+        <p className="text-xl text-slate-600">Resultados reales de emprendedores reales</p>
+      </motion.div>
 
-        <div className="mx-auto grid max-w-5xl gap-10">
-          {projects.map((p, i) => (
-            <motion.article
-              key={p.name}
-              initial={{ opacity: 0, y: 24 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
-              transition={{ delay: i * 0.1 }}
-              className="overflow-hidden rounded-3xl bg-white shadow-2xl"
-            >
-              <div className="md:flex">
-                <div className={cx("flex items-center justify-center p-12 text-white md:w-1/2", "bg-gradient-to-br", p.accent)}>
-                  <div className="text-center">
-                    <Code size={56} className="mx-auto mb-3" />
-                    <h3 className="text-3xl font-bold">{p.name}</h3>
-                    <p className="text-white/80">{p.role}</p>
-                  </div>
-                </div>
-                <div className="p-8 md:w-1/2">
-                  <h4 className="mb-4 text-2xl font-bold text-slate-900">Lo que hicimos</h4>
-                  <ul className="mb-6 space-y-3">
-                    {p.bullets.map((b) => (
-                      <li key={b} className="flex items-start gap-3 text-slate-700">
-                        <CheckCircle className="mt-1 shrink-0 text-green-500" size={20} />
-                        <span>{b}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <a
-                    href={p.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-3 font-semibold text-white shadow-lg hover:shadow-purple-500/40"
-                    aria-label={`Abrir sitio ${p.name}`}
-                  >
-                    Ver sitio <ExternalLink size={18} />
-                  </a>
-                </div>
-              </div>
-            </motion.article>
-          ))}
-        </div>
+      <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-3">
+        {projects.map((p, i) => (
+<motion.article
+  key={p.name}
+  initial={{ opacity: 0, y: 24 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, margin: "-100px" }}
+  transition={{ delay: i * 0.1 }}
+  className="relative overflow-hidden rounded-3xl bg-white shadow-xl hover:shadow-2xl transition-all duration-300 flex flex-col"
+>
+  {/* Header visual */}
+  <div
+    className={cx(
+      "flex flex-col items-center justify-center py-10 text-white bg-gradient-to-br",
+      p.accent
+    )}
+  >
+    <Code size={48} className="mb-3 opacity-90" />
+    <h3 className="text-2xl font-bold">{p.name}</h3>
+    <p className="text-white/80 text-sm">{p.role}</p>
+  </div>
+
+  {/* Contenido */}
+  <div className="p-8 pb-20 flex-grow">
+    <h4 className="mb-4 text-xl font-bold text-slate-900">Lo que hicimos</h4>
+    <ul className="space-y-3">
+      {p.bullets.map((b) => (
+        <li key={b} className="flex items-start gap-2 text-slate-700 text-base">
+          <CheckCircle className="mt-0.5 shrink-0 text-green-500" size={18} />
+          <span>{b}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+
+  {/* Botón fijo abajo */}
+  <a
+    href={p.url}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="absolute bottom-6 left-8 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 px-5 py-2.5 font-semibold text-white shadow-md hover:shadow-purple-500/40 text-sm"
+    aria-label={`Abrir sitio ${p.name}`}
+  >
+    Ver sitio <ExternalLink size={16} />
+  </a>
+</motion.article>
+
+        ))}
       </div>
-    </section>
-  )
+    </div>
+  </section>
+)
 }
 
 const About = () => {
@@ -399,19 +473,19 @@ const About = () => {
             </p>
             <p className="mb-6 text-lg text-slate-200">
               Combino desarrollo y marketing para crear
-              <strong className="mx-1 text-white">sistemas digitales que venden</strong>, no simples sitios web.
+              <strong className="mx-1 text-white">sistemas digitales que venden solos</strong>
             </p>
               <div className="mb-6 space-y-3">
                 <div className="flex items-center gap-3">
                   <Code className="text-purple-300" size={20} />
                   <span>
-                    <strong>Stack:</strong> Vue 3, React, Vuetify, Tailwind, Netlify
+                    <strong>Stack:</strong> Vue 3, React
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <TrendingUp className="text-purple-300" size={20} />
                   <span>
-                    <strong>Enfoque:</strong> Comercialización • Diseño • Conversión • Automatización
+                    <strong>Enfoque:</strong> Comercialización • Community management • Conversión • Automatización
                   </span>
                 </div>
 
@@ -461,11 +535,12 @@ aria-labelledby="contact-title"
 <div className="mx-auto max-w-4xl px-6 text-center">
 <motion.div {...fadeUp}>
 <h2
-id="contact-title"
-className="mb-6 text-4xl md:text-5xl font-extrabold leading-tight"
+  id="contact-title"
+  className="mb-6 text-4xl md:text-5xl font-extrabold leading-tight"
 >
-🚀 Lanzá tu presencia digital en 7 días
+🔥 Tu presencia digital empieza hoy
 </h2>
+
 <p className="mx-auto mb-10 max-w-2xl text-lg text-purple-100">
 Dejá tu formulario para otros. En Presence hablamos directo, rápido y sin vueltas.
 <br />
