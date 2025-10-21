@@ -111,7 +111,7 @@ const Hero = () => {
             <span className="mx-2 inline-block bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
               vende
             </span>
-            , no que decora
+            , no que solo decora
           </h1>
 
           <p className="mx-auto mb-10 max-w-2xl text-lg md:text-2xl text-slate-300">
@@ -151,7 +151,7 @@ const Problem = () => {
   const problems = [
     "¿Tu Instagram tiene seguidores pero no ventas?",
     "¿Te consultan por privado pero se pierden en el chat?",
-    "¿No tenés dónde mostrar todo profesionalmente?",
+    "¿No tenés dónde mostrarte profesionalmente?",
   ]
   return (
     <section className="bg-slate-50 py-20" aria-labelledby="problem-title">
@@ -191,7 +191,7 @@ const Services = () => {
         "Diseño limpio y adaptable",
         "Formularios que generan contacto real",
         "Hosting incluido",
-        "Listas para usar en pocos días",
+        "Lista para usar en pocos días",
       ],
       color: "from-purple-500 to-purple-600",
     },
@@ -280,29 +280,25 @@ const Process = () => {
     number: "1", 
     title: "Diagnóstico rápido", 
     badge: "Gratis", 
-    description: "Charla inicial para entender tu negocio, tus objetivos y detectar qué es lo más urgente para mejorar resultados.", 
-    time: "30 min" 
+    description: "Charla inicial para entender tu negocio, tus objetivos y detectar qué es lo más urgente para mejorar resultados."
   },
   { 
     number: "2", 
     title: "Plan a medida", 
     badge: "Flexible", 
-    description: "Según el punto en que estés, armamos una estrategia: puede ser una web, publicidad o tu presencia completa.", 
-    time: "2 días" 
+    description: "Armamos una estrategia: puede ser una web, publicidad o tu presencia completa."
   },
   { 
     number: "3", 
     title: "Implementación", 
     badge: "En acción", 
-    description: "Diseño, ajustes o lanzamientos. Trabajo rápido, te aconsejo, te muestro avances y optimizo mientras construimos resultados reales.", 
-    time: "∞" 
+    description: "Te asesoramos, mostrandote avances optimizados mientras construimos resultados reales."
   },
   { 
     number: "4", 
     title: "Crecimiento", 
     badge: "Continuo", 
-    description: "Una vez que tu base está lista, podemos escalar: campañas, embudos o contenido estratégico para seguir vendiendo más y mejor.", 
-    time: "∞" 
+    description: "Una vez generada la base, empezamos a escalar: campañas, embudos o contenido estratégico para seguir vendiendo más y mejor."
   },
 ]
 
@@ -329,7 +325,6 @@ const Process = () => {
                 <h3 className="mb-1 text-xl font-bold">{s.title}</h3>
                 <div className="mb-3 inline-block rounded-full bg-purple-500/25 px-3 py-1 text-xs font-semibold text-purple-200">{s.badge}</div>
                 <p className="mb-4 text-sm text-slate-200">{s.description}</p>
-                <div className="inline-block rounded-full bg-purple-500/25 px-3 py-1 text-xs text-purple-100">{s.time}</div>
               </div>
               {i < steps.length - 1 && (
                 <div className="absolute top-1/2 -right-4 hidden -translate-y-1/2 md:block">
@@ -542,7 +537,7 @@ aria-labelledby="contact-title"
 </h2>
 
 <p className="mx-auto mb-10 max-w-2xl text-lg text-purple-100">
-Dejá tu formulario para otros. En Presence hablamos directo, rápido y sin vueltas.
+En Presence hablamos directo, sin formulario y sin vueltas.
 <br />
 <span className="text-white font-semibold">
 Hablá conmigo ahora por WhatsApp.
@@ -598,7 +593,7 @@ const Footer = () => (
       <h3 id="footer-title" className="mb-2 text-3xl font-bold">
         <Zap size={28} strokeWidth={2.5} className="inline-block text-purple-400 drop-shadow-[0_0_6px_rgba(168,85,247,0.8)]" /> PRESENCE
       </h3>
-      <p className="mb-6 text-slate-400">Presencia digital que vende, no que decora</p>
+      <p className="mb-6 text-slate-400">Presencia digital que vende, no que solo decora</p>
       <div className="mb-8 flex justify-center gap-6">
         <a
           href={SOCIALS.whatsapp}
