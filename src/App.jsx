@@ -184,7 +184,7 @@ const Services = () => {
   const services = [
     {
       icon: <Target className="h-12 w-12" />,
-      title: "Página que convierte",
+      title: "Página que atrae",
       description:
         "Diseño páginas pensadas para mostrarte con claridad y convertir, con una estructura clara, moderna y conectada directo a WhatsApp.",
       features: [
