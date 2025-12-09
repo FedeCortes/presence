@@ -453,7 +453,7 @@ return (
     className="absolute bottom-6 left-8 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 px-5 py-2.5 font-semibold text-white shadow-md hover:shadow-purple-500/40 text-sm"
     aria-label={`Abrir sitio ${p.name}`}
   >
-    Ver sitio <ExternalLink size={16} />
+    Ver más <ExternalLink size={16} />
   </a>
 </motion.article>
 
