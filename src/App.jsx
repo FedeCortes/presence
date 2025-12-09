@@ -340,46 +340,65 @@ const Process = () => {
 }
 
 const Portfolio = () => {
-  const projects = [
-    {
-      name: "Cherry Diosa Tántrica",
-      role: "Web híbrida de marca personal",
-      url: "https://cherrydiosatantrica.netlify.app",
-      accent: "from-pink-500 to-purple-600",
-      bullets: [
-        "Menu de beacons",
-        "Pagina web con varias secciones",
-        "Redes sociales integradas a la web",
-        "Video preview con formulario y llamado a la accion",
-        "Optimización de redes y estrategias de conversion.",
-      ],
-    },
-    {
-      name: "Working Group",
-      role: "Sitio corporativo",
-      url: "https://working-group.com.ar",
-      accent: "from-indigo-500 to-cyan-600",
-      bullets: [
-        "Pagina web con varias secciones",
-        "Redes sociales integradas a la web",
-        "Asesoria para cargar el negocio a google maps",
-        "Asesoria para crear la identidad de la empresa"
-      ],
-    },
-    {
-      name: "Judith Navarro",
-      role: "Estrategia y optimización completa",
-      url: "https://www.judithnavarro.com/",
-      accent: "from-rose-500 to-orange-500",
-      bullets: [
-        "Análisis de posicionamiento y estrategia digital",
-        "Optimización de web, comunicación y contenidos",
-        "Conexión entre Instagram y web para captar clientes",
-        "Seguimiento y mejora continua de resultados"
-      ],
-    },
+const projects = [
+  {
+    name: "FrioHouse",
+    role: "Web, contenido y publicidad",
+    url: "https://www.instagram.com/friohouse_aires/",
+    accent: "from-sky-500 to-blue-700",
+    bullets: [
+      "Video de apertura del local con publicidad paga (+32k visitas)",
+      "Contenido para Instagram (reels e historias)",
+      "Sitio web: friohouse.netlify.app"
+    ],
+  },
+  {
+    name: "Cherry Diosa Tántrica",
+    role: "Web de marca personal y asesoramiento",
+    url: "https://diosatantrica.com.ar",
+    accent: "from-pink-500 to-purple-600",
+    bullets: [
+      "Desarrollo de sitio web multisección",
+      "Seccion para vender su video",
+      "Asesoramiento"
+    ],
+  },
+  {
+    name: "Paz Científica",
+    role: "Web institucional",
+    url: "https://pazcientifica.com",
+    accent: "from-emerald-500 to-teal-600",
+    bullets: [
+      "Desarrollo del sitio web",
+      "Integración con redes sociales",
+      "Botón de contacto por WhatsApp",
+    ],
+  },
+  {
+    name: "Working Group",
+    role: "Sitio corporativo",
+    url: "https://working-group.com.ar",
+    accent: "from-indigo-500 to-cyan-600",
+    bullets: [
+      "Desarrollo del sitio institucional",
+      "Integración con redes sociales",
+      "Asesoría básica de presencia digital"
+    ],
+  },
+  {
+    name: "Judith Navarro",
+    role: "Optimización digital",
+    url: "https://www.judithnavarro.com/",
+    accent: "from-rose-500 to-orange-500",
+    bullets: [
+      "Mejoras en sitio web y enlaces",
+      "Configuración de Instagram, Facebook y WhatsApp Business",
+      "Asesoría y ajustes durante 1 mes",
+      "Estrategias en grupos de facebook"
+    ],
+  },
 
-  ]
+]
 
 return (
   <section id="portfolio" className="bg-slate-50 py-20" aria-labelledby="portfolio-title">
